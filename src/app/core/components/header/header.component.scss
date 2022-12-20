@@ -1,0 +1,32 @@
+mat-toolbar{
+  background-color: #404040;
+  border: solid 0.5px #ffffff28;
+}
+span{
+  img{
+    width: 250px;
+    margin: auto;
+    vertical-align: -46px;
+    // border: solid;
+  }
+}
+ul{
+  list-style: none;
+  position: absolute;
+  right: 50px;
+  li{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    a{
+      text-decoration: none;
+      color: #64CCEA;
+      mat-icon{
+        vertical-align: middle;
+      }
+    }
+    .active-link{
+      color: white;
+    }
+  }
+}

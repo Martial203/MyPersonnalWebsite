@@ -1,3 +1,8 @@
+# You can follow the following instructions to start the project using the Angular CLI
+
+# Or you can just navigate to dist>scaladi to see the index.html and run the builded project 
+
+
 # Scaladi
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.

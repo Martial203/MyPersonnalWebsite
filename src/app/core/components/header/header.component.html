@@ -1,8 +1,17 @@
 <mat-toolbar>
   <span><img src="/assets/scaladi.png" alt="scaladi" name="scaladi"></span>
   <ul>
-  <li><a routerLink="/home" routerlinkActive="active-link">HOME<mat-icon>arrow_drop_down</mat-icon> </a></li>
-    <li><a routerLink="/about-me" routerlinkActive="active-link">ABOUT ME<mat-icon>arrow_drop_down</mat-icon> </a></li>
-    <li><a routerLink="/works" routerlinkActive="active-link">WORKS<mat-icon>arrow_drop_down</mat-icon> </a></li>
+    <li class="main-menu"><a routerLink="/home" routerLinkActive="active">HOME<mat-icon>arrow_drop_down</mat-icon> </a></li>
+    <li class="main-menu"><a routerLink="/about-me" routerLinkActive="active">ABOUT ME<mat-icon>arrow_drop_down</mat-icon> </a></li>
+    <li class="main-menu"><a routerLink="/works" routerLinkActive="active">WORKS<mat-icon>arrow_drop_down</mat-icon> </a></li>
+    <li>
+      <button id="menu" mat-fab [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="navigate('home')">HOME</button>
+        <button mat-menu-item (click)="navigate('about-me')">ABOUT ME</button>
+        <button mat-menu-item (click)="navigate('works')">WORKS</button>
+      </mat-menu>
+    </li>
   </ul>
+
 </mat-toolbar>

@@ -24,10 +24,10 @@
 <section class="my-services">
   <h2>My services</h2>
   <div class="services">
-    <mat-card *ngFor="let i of [1,2,3,4]">
+    <mat-card *ngFor="let service of myServices">
       <mat-card-content>
         <p>
-          lorem ipsum dolor sit amet no indra sut ipson
+         {{service}}
         </p>
       </mat-card-content>
       <mat-card-actions><button mat-button></button></mat-card-actions>

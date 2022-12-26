@@ -4,10 +4,26 @@ h2{
   text-shadow: 0px 1px 2px;
 }
 .projects{
-  mat-grid-list{
-    mat-grid-tile{
-      mat-card{
-      }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: space-between;
+  flex-wrap: wrap;
+  mat-card{
+    iframe{
+      width: 100%;
+      overflow: hidden;
     }
+    overflow: hidden;
+    min-width: 400px;
+    max-width: 500px;
+    height: 400px;
+    margin-bottom: 20px;
+    img{
+      height: 90%;
+    }
+  }
+  mat-card:last-of-type{
+    height: 80px;
   }
 }

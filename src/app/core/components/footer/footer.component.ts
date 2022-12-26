@@ -13,6 +13,6 @@ export class FooterComponent implements OnInit {
   }
 
   onSend(): void{
-    alert('Yooo');
+    alert('Sorry! The service is momentenly inactive. Use the mail adress provided beside.');
   }
 }

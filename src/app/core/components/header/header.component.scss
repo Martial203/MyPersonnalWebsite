@@ -25,8 +25,23 @@ ul{
         vertical-align: middle;
       }
     }
-    .active-link{
+    .active{
       color: white;
+      text-decoration: underline;
     }
   }
+  @media (min-width: 852px) {
+    li:not(.main-menu){
+      display: none;
+    }
+  }
+  @media (max-width:852px){
+    .main-menu{
+      display: none;
+    }
+  }
+}
+#menu{
+  color: white;
+  background-color: #404040;
 }
